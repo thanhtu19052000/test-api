@@ -1,0 +1,31 @@
+#API Registry client configuration
+eureka:
+  instance:
+    metadata-map:
+      public: true
+      role: live
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+# Configure Internal JWT handler
+management:
+  health:
+    jms:
+      enabled: false
+
+sso:
+  jwt:
+    internal:
+      signature:
+        key:
+          type: ENV
+          value: SIG_SECRET_KEY
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE

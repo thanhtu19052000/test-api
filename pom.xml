@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.backbase.buildingblocks</groupId>
+        <artifactId>service-sdk-starter-core</artifactId>
+        <version>17.0.0</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.backbase</groupId>
+    <artifactId>test-api</artifactId>
+    <version>1.0.0</version>
+    <name>Backbase ::test.api</name>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <docker.repo.url>local</docker.repo.url>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.backbase.buildingblocks</groupId>
+                <artifactId>service-sdk-starter-core</artifactId>
+                <version>17.0.0</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.backbase.buildingblocks</groupId>
+            <artifactId>service-sdk-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.backbase.buildingblocks</groupId>-->
+<!--            <artifactId>service-sdk-starter-test</artifactId>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.backbase.buildingblocks</groupId>-->
+<!--            <artifactId>building-blocks-common</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.backbase.buildingblocks</groupId>-->
+<!--            <artifactId>api</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.backbase.buildingblocks</groupId>-->
+<!--            <artifactId>communication</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.backbase.buildingblocks</groupId>-->
+<!--            <artifactId>auth-security</artifactId>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>com.backbase.buildingblocks</groupId>-->
+<!--            <artifactId>service-sdk-starter-mapping</artifactId>-->
+<!--        </dependency>-->
+    </dependencies>
+</project>
