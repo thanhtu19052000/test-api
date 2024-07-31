@@ -1,0 +1,5 @@
+{"images": [{
+    "registry": "staging",
+    "image": "test-api",
+    "tag": "1.0.0"
+}]}

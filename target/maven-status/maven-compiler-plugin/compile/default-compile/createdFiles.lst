@@ -1,0 +1,5 @@
+com\backbase\test\api\config\AppConfiguration$BearerTokenInterceptor.class
+com\backbase\test\api\config\AppConfiguration.class
+com\backbase\test\api\ExampleController.class
+com\backbase\test\api\Message.class
+com\backbase\test\api\Application.class
